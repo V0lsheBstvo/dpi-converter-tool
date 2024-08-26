@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://kartinkof.cdnsap.ru/posts/fioletovochernyi-fon-70-foto-1.jpg");
+    background-size: cover;
+    background-attachment: fixed; /* Опционально, фиксирует фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    -webkit-animation: slidein 100s alternate infinite;
+    animation: slidein 100s alternate infinite;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый фон */
+    padding: 20px;
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; /* Чтобы контейнер был выше фона */
+    backdrop-filter: blur(20px); /* Размытие фона */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Минималистичная обводка */
+}
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}

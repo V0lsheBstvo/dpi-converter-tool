@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPI And Sensitivity Converter Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DPI & Sensitivity</h1>
+        <h2>Converter Tool</h2>
+        <div class="converter">
+            <label for="currentDPI">Current DPI:</label>
+            <input type="number" id="currentDPI" placeholder="Enter Current DPI" />
+
+            <label for="currentSensitivity">Current Sensitivity:</label>
+            <input type="number" id="currentSensitivity" placeholder="Enter Current Sensitivity" />
+
+            <label for="newDPI">New DPI:</label>
+            <input type="number" id="newDPI" placeholder="Enter New DPI" />
+
+            <button onclick="convert()">Convert</button>
+
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
